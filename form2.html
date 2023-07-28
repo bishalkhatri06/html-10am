@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2nd</title>
+</head>
+<body>
+    <form action="form.html" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Student Form</legend>
+            <h2>Student Form</h2>
+
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="fullname" required autofocus><br><br>
+            <label for="address">Address: </label>
+            <textarea name="address" id="address" cols="30" rows="5"></textarea><br><br>
+            <label for="psw">Password:</label>
+            <input type="password" name="psw" id="psw" minlength="3" maxlength="10" ><br><br>
+            <label for="zipcode">Zip Code: </label>
+            <input type="number" id="zipcode" name="zipcode"><br><br>
+            <label>Gender: </label><br>
+            <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label><br>
+            <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label><br><br>
+            <label>Country: </label><br>
+            <input type="checkbox" name="country" id="nepal" value="Nepal"><label for="nepal">Nepal</label><br>
+            <input type="checkbox" name="country" id="india" value="india"><label for="india">India</label><br>
+
+            <input type="email" name="email" id="email" placeholder="Enter your email." size="50"><br>
+            <input type="search" name="search" id="search" placeholder="Search anything" ><br>
+            <input type="hidden" name="class" value="class 10"><br>
+            <input type="range" name="" id=""><br>
+
+            <ul>
+                <h2>Subject</h2>
+                <li>Math <input type="checkbox" name="" id="" value="Math"></li>
+            </ul>
+
+            <label for="mun">Municipality: </label>
+            <select name="municipality" id="mun" multiple>
+                <option >-- select your municipality --</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Kirtipur">Kirtipur</option>
+                <option value="Nagarjun">Nagarjun</option>
+            </select><br>
+            <label for="dob">Date of Birth: </label>
+            <input type="date" name="dob" id="dob" min="2000-01-01" max="2030-01-01"><br><br>
+            <input type="datetime-local" name="" id=""><br><br>
+            <input type="month" name="" id=""><br><br>
+            <input type="week" name="" id=""><br><br>
+            <input type="color" name="" id=""><br><br>
+            <input type="url" name="" id="">
+
+            <label for="file">File Upload: </label>
+            <input type="file" name="file" id="file" multiple>
+
+
+
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </fieldset>
+    </form>
+</body>
+</html>
